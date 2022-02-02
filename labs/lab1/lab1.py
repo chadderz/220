@@ -23,3 +23,5 @@ def calc_interest_rate():
     monthly_interest = avg_daily_balance * (interest_rate_decimal / 12)
     monthly_interest_rounded = round(monthly_interest,2)
     print('Your monthly interest is $', monthly_interest_rounded, '!')
+
+calc_interest_rate()
