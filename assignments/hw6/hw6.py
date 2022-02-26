@@ -1,38 +1,54 @@
 """
-Name: <your name goes here – first and last>
-<ProgramName>.py
+Name: Margaux Walz
+hw6.py
 
 Problem: <Brief, one or two sentence description of the problem that this program solves, in your own words.>
 
 Certification of Authenticity:
-<include one of the following>
 I certify that this assignment is entirely my own work.
-I certify that this assignment is my own work, but I discussed it with: <Name(s)>
 """
+
+import math
 
 
 def cash_converter():
-    pass
+    int1 = eval(input("enter an integer: "))
+    print("That is ${:,.2f}".format(int1))
 
 
 def encode():
-    pass
+    message = input("enter a message: ")
+    key = eval(input("enter a key: "))
+    encrypt = ""
+    for char in message:
+        num = ord(char) + key
+        encrypt += chr(num % 128)
+    return encrypt
 
 
 def sphere_area(radius):
-    pass
+    area = 4 * math.pi * radius ** 2
+    print(area)
 
 
 def sphere_volume(radius):
-    pass
+    volume = (4/3) * (math.pi * radius ** 3)
+    print(volume)
 
 
 def sum_n(number):
-    pass
+    sum1 = 0
+    sum2 = 0
+    for val in range(1, number+1):
+        sum2 = sum1 + val
+    print(sum2)
 
 
 def sum_n_cubes(number):
-    pass
+    sum1 = 0
+    for i in range(1, number+1):
+        sum1 += i ** 3
+    return sum1
 
 
 def encode_better():
